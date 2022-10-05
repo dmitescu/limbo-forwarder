@@ -1,0 +1,42 @@
+.TH FORWARDER 1
+.SH NAME
+forwarder \- simple port forwarding agent
+.SH SYNOPSIS
+.B svc/forwarder
+[
+.B -d
+]
+[
+.B -F
+]
+[
+.B -m
+mode
+]
+source destination
+.SH DESCRIPTION
+.B Forwarder
+is a port forwarding agent meant
+to work across network filesystems. It takes the
+.IR source
+mount, the
+.IR destination
+mount, and forwards
+.IR src
+to
+.IR dst
+according to the configuration.
+.PP
+Options:
+.TP
+.B -d
+Enable debug messages.
+.TP
+.B -F
+Run in foreground, not releasing the terminal.
+.TP
+.BI -m " mode"
+(TODO) Use the operation in the specified mode. In the future,
+local and remote mounts will be supported.
+.SH SOURCE
+.B /dis/svc/forwarder.b

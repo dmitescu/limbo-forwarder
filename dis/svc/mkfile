@@ -1,0 +1,12 @@
+<../../mkconfig
+
+TARG=\
+	forwarder.dis\
+
+SYSMODULES=\
+	draw.m\
+	sys.m\
+
+DISBIN=$ROOT/dis/svc
+
+<$ROOT/mkfiles/mkdis

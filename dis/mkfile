@@ -1,0 +1,6 @@
+<../mkconfig
+
+DIRS=\
+	svc\
+
+<$ROOT/mkfiles/mksubdirs
